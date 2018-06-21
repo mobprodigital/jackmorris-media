@@ -6,15 +6,21 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { HomeComponent } from './components/home/home.component';
 
+// bootstrap module
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsComponent } from './components/about-us/about-us.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     SiteHeaderComponent,
     SiteFooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

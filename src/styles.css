@@ -27,27 +27,111 @@ a.nav-link {
 }
 
 a.nav-link.active {
-    color: #0095D9;
+  color: #0095D9;
 }
 
 footer#site-footer {
-    background-color: #2d3742;
-    color: #8c8c8c;
-    padding: 80px 0;
+  background-color: #2d3742;
+  color: #8c8c8c;
+  padding: 80px 0;
 }
+
 h3.footer-title {
-    font-weight: 100;
-    margin-bottom: 18px;
-    color: #d2d2d2;
+  font-weight: 100;
+  margin-bottom: 18px;
+  color: #d2d2d2;
 }
+
 section.footer-text {
-    font-weight: 100;
+  font-weight: 100;
 }
+
 aside.copyright {
-    background-color: #6b7177;
-    color: #fff;
-    padding: 20px 0;
+  background-color: #6b7177;
+  color: #fff;
+  padding: 20px 0;
 }
+
 .copyright-text {
-    text-align: center;
+  text-align: center;
+}
+
+/* home page slider start*/
+
+.home-slide-one {
+  height: 600px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-item {
+  animation-name: imageSlider;
+  animation-fill-mode: forwards;
+  animation-duration: 0.25s;
+}
+
+@keyframes imageSlider {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+section.home-slider .carousel-caption {
+    left: 15%;
+    text-align: left;
+    bottom: calc(50% - 50px);
+}
+section.home-slider .carousel-caption h3 {
+    font-size: 55px;
+    font-weight: 100;
+    color: #000;
+}
+section.home-slider .carousel-caption p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* home page slider end */
+.section {
+    padding: 100px 0;
+}
+.section-title {
+    font-weight: 300;
+    font-family: "Work Sans";
+}
+.section-text {
+    font-weight: 300;
+    font-family: "Work Sans";
+}
+.feature-section-wrap {
+  background-color: #cde5ec;
+  padding: 80px 0px;
+  font-family: "Work Sans";
+}
+.feature-section-title {
+  font-weight: 300;
+  font-family: "Work Sans";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.feature-section-text {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+section.saparator-section {
+  padding: 23px 0;
+  background-color: #12394b;
+  color: #fff;
+}
+.saparator-section-text {
+  font-size: 27px;
+  text-align: center;
+  font-weight: 100;
 }
