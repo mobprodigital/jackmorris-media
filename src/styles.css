@@ -103,6 +103,9 @@ section.home-slider .carousel-caption p {
 .section-title {
     font-weight: 300;
     font-family: "Work Sans";
+    letter-spacing: 0;
+    margin: 20px 0;
+    font-size: 25px;
 }
 .section-text {
     font-weight: 300;
@@ -134,4 +137,95 @@ section.saparator-section {
   font-size: 27px;
   text-align: center;
   font-weight: 100;
+}
+.featured-image-header {
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-imahe-inner {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Work Sans";
+}
+
+.header-imahe-inner > * {
+  width: 100%;
+}
+
+.header-image-title {
+  font-size: 65px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.header-image-subtitle {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0;
+  position: relative;
+  padding-left: 59px;
+  color: gray;
+}
+
+.header-image-subtitle::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  background: gray;
+  height: 2px;
+  left: 0;
+  top: calc(54%);
+}
+
+.team-member-img > span {
+  display: inline-block;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-member-info {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+}
+.team-member-img {
+  text-align: center;
+  padding: 30px 0;
+  background: #f7f7f7;
+}
+.team-member-designation {
+  font-size: small;
+  font-weight: 100;
+}
+.team-member-name {
+  font-size: 23px;
+  font-weight: 300;
+}
+.team-social-link-wrap {
+  text-align: center;
+  margin: 10px 0;
+}
+.team-member {
+  background-color: #f7f7f7;
+}
+a.team-social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding-top: 6px;
+  margin: 0 3px 0 0;
 }
