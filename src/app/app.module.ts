@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// components
 import { AppComponent } from './app.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -14,8 +16,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'home',      component: HomeComponent },
-  { path: '',
+  { path: 'home', component: HomeComponent },
+  { path: 'solutions', component: OurServicesComponent },
+  {
+    path: '',
     redirectTo: 'home',
     pathMatch: 'full',
   },
@@ -27,7 +31,8 @@ const appRoutes: Routes = [
     SiteHeaderComponent,
     SiteFooterComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    OurServicesComponent
   ],
   imports: [
     BrowserModule,
