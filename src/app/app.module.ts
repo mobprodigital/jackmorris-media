@@ -13,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 // bootstrap module
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     SiteFooterComponent,
     HomeComponent,
     AboutUsComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
