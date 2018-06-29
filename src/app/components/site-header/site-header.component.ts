@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiteHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.addEventListener('scroll', () => {
+      let topHeader: HTMLElement = document.getElementById('top-header');
+      let topOffset = window.scrollY;
+      if(topOffset >= topHeader.clientHeight){
+        document.getElementById('main-nav').classList.add('fixed-top')
+      }
+      else{
+        document.getElementById('main-nav').classList.remove('fixed-top')
+        
+      }
+    })
+  }
 
   ngOnInit() {
+
   }
+
+
 
 }

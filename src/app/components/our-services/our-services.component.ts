@@ -9,7 +9,7 @@ import { Solution } from '../../modals/solutions';
 })
 export class OurServicesComponent implements OnInit {
 
-  private solutionList: Array<Solution> = [
+  public solutionList: Array<Solution> = [
     new Solution(
       'MOBILE ADVERTISEMENT',
       ['Banner & Video']
